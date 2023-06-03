@@ -5,19 +5,32 @@ using namespace std;
 
 int main ()
 {
+    // initializing vector v1
     vector<int> v1;
-    int insert;
-    //taking input as much as they want
-    cout<< " after completing your input press ctrl + D then press Enter"<<endl;
-    while (cin>>insert)
-    {
-        v1.push_back(insert);
-    }
-    // we can not use direct cout << v1 
-    // to print we need to use the loop
-    for (auto p :v1)
-     cout<<p<<" ";
-     cout<<endl;
+    // taking raw input method: 1
+   v1 = {1,2,3,4};
+   //taking raw input method:2
+   vector<int> v2{1,2,3,4};
+   //taking raw input method: 3
+   vector<int> v3(5,12);
+
+   cout<< "v1 elements"<< endl;
+   for (int& i : v1)
+   {
+    cout<< v1[i]<< endl;
+   }
+
+   cout<< "v2 elements"<< endl;
+   for (int& i : v2)
+   {
+    cout<< v1[i]<< endl;
+   }
+
+   cout<< "v3 elements"<< endl;
+   for (int& i : v3)
+   {
+    cout<< i << endl;
+   }
 
 
 }
